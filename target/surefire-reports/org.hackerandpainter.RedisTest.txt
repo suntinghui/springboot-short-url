@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.hackerandpainter.RedisTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.728 s <<< FAILURE! - in org.hackerandpainter.RedisTest
+test1(org.hackerandpainter.RedisTest)  Time elapsed: 1.263 s  <<< ERROR!
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.hackerandpainter.RedisTest.test1(RedisTest.java:19)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.hackerandpainter.RedisTest.test1(RedisTest.java:19)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hackerandpainter.RedisTest.test1(RedisTest.java:19)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at org.hackerandpainter.RedisTest.test1(RedisTest.java:19)
+

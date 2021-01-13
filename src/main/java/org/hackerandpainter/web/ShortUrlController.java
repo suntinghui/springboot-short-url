@@ -39,7 +39,7 @@ import java.nio.charset.StandardCharsets;
 @RestController
 public class ShortUrlController extends AbstractController{
 
-  public static final String SHORT_URL_TPL = "http://localhost:8080/t/";
+  public static final String SHORT_URL_TPL = "https://qbhb.emgot.com:8888/t/";
 
   private Logger logger = LogManager.getLogger(getClass());
 
